@@ -4,7 +4,7 @@ import csv
 # Connect to the database
 passwd=input("To make sure it is you, please enter the password: ")
 try:
-    conobj=mysql.connector.connect(host="mysql-199a1802-reynoldsjordan045-93ab.e.aivencloud.com",user="avnadmin",password=passwd, database="comp_proj", port="19863")    #Enter your database details here
+    conobj=mysql.connector.connect(host="localhost",user="root",password=passwd, database="comp_proj")
     print("Connected Successfully!")
     cur=conobj.cursor()
 except:
